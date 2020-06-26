@@ -1,8 +1,14 @@
 # Kubernetes_Workshop
 ```
 ## k8s.sh 내용
+# Image Pull from DockerHub
+docker pull 08youjin12/docker_workshop
+
 # Image Deploy (dockerhub의 이미지 가져오기)
 kubectl run myworkshop --image=08youjin12/docker_workshop --port=80
+(# Windows User의 경우 명령어 앞에 winpty 추가
+winpty kubectl run myworkshop --image=08youjin12/docker_workshop -port=80)
+
 # Pods 20 
 kubectl.exe scale deployment myworkshop --replicas=20
 # Service Port 80
